@@ -8,7 +8,7 @@
 ## How to Install
 
 ```bash
-npm install alexa -g
+npm install alexasearch -g
 ```
 
 ## How to Use
@@ -18,7 +18,7 @@ npm install alexa -g
 > :warning: Currently the max request for searching by Rate is `40`
 
 ```bash
-alexa top -t 20 || alexa top --top 20
+alexasearch top -t 20 || alexasearch top --top 20
 ```
 
 > response
@@ -53,7 +53,7 @@ show top 20 sites URL on www.alexa.com. [
 > :warning: Currently the options for searching by Country only support `AL` && `DE`
 
 ```bash
-alexa country -c DE || alexa country --country DE
+alexasearch country -c DE || alexasearch country --country DE
 ```
 
 > response
