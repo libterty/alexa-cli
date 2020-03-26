@@ -25,8 +25,17 @@ const TopCountry = {
   },
 
   LaunchCountrySearch() {
+    const currentOpts = ['AL', 'DE'];
     const options = this.parseArgumentsIntoOptions();
-    const result = this.callAts(options.country);
+    if (!options.country || typeof options.country !== 'string') {
+      throw new Error('Input Country Options syntax error');
+    } else if (options.country && currentOpts.indexOf(options.country) === -1) {
+      throw new Error(
+        `Input Country Options: ${options.country} not found, we only provide AL && DE so far`
+      );
+    } else {
+      this.callAts(options.country);
+    }
   },
 
   callAts(country) {
