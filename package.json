@@ -20,8 +20,8 @@
     "url": "https://github.com/libterty/alexa-cli.git"
   },
   "bin": {
-    "top": "./index.js",
-    "country": "./country.js"
+    "top": "./top/index.js",
+    "country": "./country/index.js"
   },
   "prettier": {
     "semi": true,

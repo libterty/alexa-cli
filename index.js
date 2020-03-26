@@ -1,26 +1,18 @@
 #!/usr/bin/env node
+
 const arg = require('arg');
+const userOption = process.argv[2];
+const TopRate = require('./top/index');
+const TopCountry = require('./country/index');
 
-function parseArgumentsIntoOptions() {
-  const args = arg(
-    {
-      '--top': Number,
-      '--yes': Boolean,
-      '-t': '--top',
-      '-y': '--yes',
-    },
-    {
-      argv: process.argv.slice(2),
-    }
-  );
-  return {
-    top: args['--top'] || 20,
-  };
+function init() {
+  if (userOption === 'top') {
+    TopRate.LaunchTopSearch();
+  } else if (userOption === 'country') {
+    TopCountry.LaunchCountrySearch();
+  } else {
+    console.log(`Invalid option: ${userOption}`);
+  }
 }
 
-async function LaunchSearch() {
-  const options = parseArgumentsIntoOptions();
-  console.log('options', options.top);
-}
-
-LaunchSearch();
+init();
