@@ -8,7 +8,7 @@
 ## How to Install
 
 ```bash
-npm install alexasearch -g
+npm install alexasearch
 ```
 
 ## How to Use
@@ -82,3 +82,11 @@ Top 20 sites URL in DE: [
   { rank: '20', url: 'Bild.de' }
 ]
 ```
+
+## Author
+
+[11](https://github.com/libterty)
+
+# CopyRight
+
+Copyright © 2020, 11. Released under the MIT License.
