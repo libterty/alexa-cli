@@ -50,7 +50,10 @@ const TopCountry = {
     const result = countries[country];
 
     return result
-      ? console.log(`Top 20 sites URL in ${country}:`, result)
+      ? console.log(
+          `show top 20 sites URL on www.alexa.com by country: ${country}:`,
+          result
+        )
       : console.log(`Cannot find data for ${country}`);
   },
 };

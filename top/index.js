@@ -32,7 +32,7 @@ const TopRate = {
     } else if (options.top && options.top <= 40 && options.top > 0) {
       const result = this.callAts(options.top);
       console.log(
-        `show top ${options.top} sites URL on www.aexa.com.`,
+        `show top ${options.top} sites URL on www.alexa.com.`,
         result
       );
     }
